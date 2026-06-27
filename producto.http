@@ -1,0 +1,34 @@
+# Listar todos
+GET http://localhost:3000/productos
+
+###
+
+# Obtener uno por id
+GET http://localhost:3000/productos/1
+
+###
+
+# Crear uno nuevo
+POST http://localhost:3000/productos
+Content-Type: application/json
+
+{
+  "nombre": "Monitor 24",
+  "precio": 350,
+  "stock": 5
+}
+
+###
+
+# Actualizar (solo el precio)
+PUT http://localhost:3000/productos/1
+Content-Type: application/json
+
+{
+  "precio": 99
+}
+
+###
+
+# Eliminar
+DELETE http://localhost:3000/productos/1
